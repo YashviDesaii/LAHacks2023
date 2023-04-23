@@ -56,7 +56,7 @@ class App extends Component {
           <Route path="/assignments" exact component={AssignmentHome} />
           <Route path="/overview" exact component={OverviewHome} />
           <Route path="/quiz" exact component={Flashquiz} />
-          <Route path="/todo" exact component={TodoList} />
+          <Route path="/todo" exact component={AssignmentHome} />
           <Route component={StudentHome} />
         </Switch>
         <Layout.Footer className={Classes.footer}>

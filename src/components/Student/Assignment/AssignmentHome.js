@@ -13,17 +13,47 @@ const data = [
   {
     title: "TODO 1",
     desc:
-      "PrhaskhfwhkjedjsfjkhLKFJHLveniam est."
+      "Sign up for the conference"
   },
   {
     title: "TODO 2",
     desc:
-      "Proident exercitation nisi labore sint laboris proident deserunt laborum culpa enim veniam est."
+      "Be aware of your rights"
   },
   {
     title: "TODO 3",
     desc:
-      "Proident exercitation nisi laboveniam est."
+      "Learn about the internet and intellectual property"
+  },
+  {
+    title: "TODO 4",
+    desc:
+      "Learn about agency and business organizations"
+  },
+  {
+    title: "TODO 5",
+    desc:
+      "Learn about property"
+  },
+  {
+    title: "TODO 6",
+    desc:
+      "Take a look at the academic calendar"
+  },
+  
+  
+];
+
+const data2 = [
+  {
+    title: "TODO 1",
+    desc:
+      "register for the course on canvas"
+  },
+  {
+    title: "TODO 2",
+    desc:
+      "sign plagiarism form"
   },
   
   
@@ -52,7 +82,7 @@ class AssignmentHome extends Component {
           />
           {window.innerWidth === 650 ? <Divider /> : null}
           <AssignmentsTab
-            data={data}
+            data={data2}
             tabData={this.state.tabData}
             isCompleted={true}
             title="Completed"
