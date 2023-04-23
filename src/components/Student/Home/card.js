@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './card.css'; // Import CSS file
+import { transcript_text } from './constants';
 
 function BasicExample() {
   return (
@@ -9,9 +10,8 @@ function BasicExample() {
       <Card.Body>
         <Card.Title>Transcription</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the buexample text to build on the card title and make up the buexample text to build on the card title and make up the buexample text to build on the card title and make up the buexample text to build on the card title and make up the buexample text to build on the card title and make up the buexample text to build on the card title and make up the buexample text to build on the card title and make up the bulk of the card's content.
+          {transcript_text}
         </Card.Text>
-       
       </Card.Body>
     </Card>
   );

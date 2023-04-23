@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Layout, Typography } from "antd";
 
 import Classes from "./Header.module.css";
+import rubberDucky from "./ducky.png"; // import the image file
+
 
 class Header extends Component {
   render() {
@@ -11,7 +13,12 @@ class Header extends Component {
           level={1}
           style={{ color: "#9FA99D", fontWeight: "normal" }}
         >
-          Student Management App
+                    <img src={rubberDucky} alt="Rubber Ducky" width="40" height="40"/> {/* Add the image */}
+
+          Quackademic Homeroom
+
+         
+
         </Typography.Title>
       </Layout.Header>
     );

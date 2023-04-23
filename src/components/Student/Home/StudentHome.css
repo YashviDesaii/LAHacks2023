@@ -14,7 +14,8 @@ label[for="audio-upload"] {
 
   .Card {
     width: 300px;
-    height: fit-content;
+    /* height: fit-content; */
+    height: 100px !important;
     margin-top: 25px !important;
   }
   

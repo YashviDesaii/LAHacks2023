@@ -1,0 +1,1 @@
+export const transcript = 'give me an overview of the lecture transcript in 10 bullet points';
