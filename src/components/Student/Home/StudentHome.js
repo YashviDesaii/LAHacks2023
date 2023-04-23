@@ -55,7 +55,7 @@ class SiderDemo extends React.Component {
             body: file,
             mode: 'cors',
             headers: {
-              authorization: 'Bearer ya29.a0Ael9sCP6ww8gk1FGkA9hRlWOnNePlPzMMBf-PYbZ-4qIgZCZgZhH7ObMQB41tpPRUVxpuDQsb5Dz0idH1YE_x0y4don3TRIZmMzIFBa1hUlFOMaw6E-UJy1-GG90RNbM8XOD-74VjEqAI2HFuw5IJe-ngYp2aCgYKAVESARISFQF4udJhmH36OPSWWp6otprvhLltNQ0163'
+              authorization: 'Bearer ya29.a0Ael9sCPq0-cql-1udf-n9bR1nrGYu1bOEQGQs8ee4RozuhqvQSWDGwjYpAEPaCE8ZZlN0HKq90pxT-yOc4Y0E2UTnAvNXlb7wKMRrc-4b6Gela33iRn5hCzlV9BhvPFLzI7DsN6J5IjU4afNL5nmRjFIq6T5aCgYKAVoSARISFQF4udJh_Rw4jm_vtAHJfd70-dxHZg0163'
             }
         });
         console.log(response);
@@ -67,7 +67,7 @@ class SiderDemo extends React.Component {
           method: 'POST',
           headers: {
            // 'Content-Type': 'application/json',
-           authorization: 'Bearer ya29.a0Ael9sCPG3MJUrwrpe23MqLM0EwdA3k7IruOXg95HOS-aCUR-CnVZAiKCKclmZhqsmsI2OesGBkw-mDGNYHK4muC55c6wVp_S-DPB8zZrUBPbxJJsTDDU9iSeY79hqMw688cjJ0NvowNebAv0G02jXBGW-Td0aCgYKAXoSARISFQF4udJhuuSeARZWhKO1Zhs0Eh_DJA0163'
+           authorization: 'Bearer ya29.a0Ael9sCPmlOt2p2tkZ7QugPAlngiU6T80wqyy9AQPpzSlkWZyhj5M0FCL2a0qZw-6lW1V4L7fCNqNgWF4YmjJBLPWO78gzJ1CuMWJZM-3slVW_wkT9qb_qzLA1S7-gsppFuYhqftMrzX-41WUKMb3v9yqqBdFaCgYKAXUSARISFQF4udJh40LT5VsKlZq6Q9sLDiGDqg0163'
           },
           body: JSON.stringify( {
             config: {
@@ -85,14 +85,14 @@ class SiderDemo extends React.Component {
       });
   
       //Handle the response from the second API call
-      const data = await secondResponse.json();
-      console.log(data);
-      const transcriptUrl = "https://storage.googleapis.com/la2023hacks/transcript/transcript6.txt"
-      fetch(transcriptUrl)
-      .then(response => response.text())
-      .then(data => {
-        console.log(data);
-      })
+      // const data = await secondResponse.json();
+      // console.log(data);
+      // const transcriptUrl = "https://storage.googleapis.com/la2023hacks/transcript/transcript6.txt"
+      // fetch(transcriptUrl)
+      // .then(response => response.text())
+      // .then(data => {
+      //   console.log(data);
+      // })
 
     } catch (error) {
         console.error('Error:', error);
