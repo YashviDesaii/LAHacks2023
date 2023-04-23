@@ -11,51 +11,33 @@ import AssignmentsTab from "../../UI Components/AssignmentsTab/AssignmentsTab";
 
 const data = [
   {
-    title: "Assignment 1",
+    title: "TODO 1",
+    desc:
+      "PrhaskhfwhkjedjsfjkhLKFJHLveniam est."
+  },
+  {
+    title: "TODO 2",
     desc:
       "Proident exercitation nisi labore sint laboris proident deserunt laborum culpa enim veniam est."
   },
-  {
-    title: "Assignment 2",
-    desc:
-      "Proident exercitation nisi labore sint laboris proident deserunt laborum culpa enim veniam est."
-  },
-  {
-    title: "Assignment 3",
-    desc:
-      "Proident exercitation nisi labore sint laboris proident deserunt laborum culpa enim veniam est."
-  },
-  {
-    title: "Assignment 4",
-    desc:
-      "Proident exercitation nisi labore sint laboris proident deserunt laborum culpa enim veniam est."
-  },
-  {
-    title: "Assignment 5",
-    desc:
-      "Proident exercitation nisi labore sint laboris proident deserunt laborum culpa enim veniam est."
-  },
-  {
-    title: "Assignment 5",
-    desc:
-      "Proident exercitation nisi labore sint laboris proident deserunt laborum culpa enim veniam est."
-  }
+  
+  
 ];
 
 class AssignmentHome extends Component {
   state = {
-    tabData: ["SMAT330C", "IOPS332C", "ITOC330C", "IOOM332C", "EMIP332C"]
+    tabData: ["SUBJECT1", "AUDIO2"]
   };
   render() {
     return (
-      <StudentPageLayout menuSelect="3">
+      <StudentPageLayout menuSelect="1">
         <div
           style={{
             display: "flex",
             width: "100%",
             justifyContent: "space-around",
             overflow: "scroll",
-            flexWrap: "wrap"
+            flexWrap: "wrap", paddingTop:80
           }}
         >
           <AssignmentsTab

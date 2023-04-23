@@ -10,8 +10,10 @@ class StudentPageLayout extends Component {
     return (
       <Layout>
         <Header />
-        <Layout style={{ background: "white" }}>
-          <SideMenu menuSelect={this.props.menuSelect} />
+        <Layout style={{ background: "#F5F4F2" }}>
+        <div style={{ backgroundColor: "#F5F4F2" }}>
+  <SideMenu menuSelect={this.props.menuSelect} />
+</div>
           {this.props.children}
         </Layout>
       </Layout>

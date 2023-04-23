@@ -1,0 +1,29 @@
+.custom-card {
+    width: 40rem;
+    background-color: #212121;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px;
+    margin-left: 0;
+  }
+  
+  .custom-card .card-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #F5F4F2;
+  }
+  
+  .custom-card .card-text {
+    font-size: 16px;
+    color: #F5F4F2;
+    margin-bottom: 16px;
+  }
+  
+  .custom-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  

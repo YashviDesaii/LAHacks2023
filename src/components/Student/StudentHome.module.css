@@ -1,9 +1,12 @@
 .dashboard {
-  display: flex;
+  /* display: inherit; */
   margin: 24px 16px;
   padding: 24px;
-  min-height: 280px;
+  /* min-height: 280px; */
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+
 }
+
+

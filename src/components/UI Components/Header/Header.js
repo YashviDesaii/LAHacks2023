@@ -9,7 +9,7 @@ class Header extends Component {
       <Layout.Header className={Classes.header}>
         <Typography.Title
           level={1}
-          style={{ color: "white", fontWeight: "normal" }}
+          style={{ color: "#9FA99D", fontWeight: "normal" }}
         >
           Student Management App
         </Typography.Title>

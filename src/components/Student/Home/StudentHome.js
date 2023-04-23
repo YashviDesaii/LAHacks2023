@@ -7,6 +7,21 @@ import StudentClasses from "../StudentHome.module.css";
 import { cohere_overview } from './constants';
 import { cohere_todolist } from './constants';
 import { Link } from 'react-router-dom';
+import "./StudentHome.css"
+import Card from 'react-bootstrap/Card';
+import AttendanceCard from "../../UI Components/Calender/AttendanceCard";
+import AssignmentsTab from "../../UI Components/AssignmentsTab/AssignmentsTab";
+
+import { Typography } from "antd";
+
+import Button from 'react-bootstrap/Button';
+import BasicExample from './card'
+
+
+
+
+
+
 
 // import { SpeechClient } from '@google-cloud/speech';
 // import { promisify } from 'util';
@@ -71,6 +86,12 @@ class SiderDemo extends React.Component {
       //Handle the response from the second API call
       const data = await secondResponse.json();
       console.log(data);
+      const transcriptUrl = "https://storage.googleapis.com/la2023hacks/transcript/transcript6.txt"
+      fetch(transcriptUrl)
+      .then(response => response.text())
+      .then(data => {
+        console.log(data);
+      })
 
     } catch (error) {
         console.error('Error:', error);
@@ -115,31 +136,37 @@ class SiderDemo extends React.Component {
   render() {
     return (
       <StudentPageLayout menuSelect="1">
-        <Content className={StudentClasses.dashboard}>
+  <div style={{ display: 'flex' }}>
+    {/* Left side */}
+    <div style={{ flex: 2, paddingTop: 50, paddingLeft: 100 }}>
+      <Content className={StudentClasses.dashboard} style={{ padding: 16 }}>
         <label htmlFor="audio-upload">Upload Audio File:</label>
-                   <input type="file" id="audio-upload" onChange={this.handleAudioUpload} />
-                   
-         {/* <DashboardCard
-            imageURL="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwmgYEUwvWfI5ivwD5eXaBGzR35wdzrjI-B1MDYIBK9PJBSrwF-A"
-            title="Assignments"
-            link="/assignments"
-    />*/}
-    <div>
-      <button onClick={() => this.onCohereCall(cohere_overview)}>
-        Generate lecture overview
-      </button>
-      <button onClick={() => this.onCohereCall(cohere_todolist)}>
-        Create a To-Do List
-      </button>
-      <Link to="/quiz">
-          <button>Quiz me!</button>
-        </Link>
+        <input type="file" id="audio-upload" onChange={this.handleAudioUpload} />
+
+        {/* <div style={{ marginTop: 20, overflow: 'scroll', width: '100%', paddingBottom: 16 }}>
+          <Typography.Title style={{ textAlign: "left", color: "rgba(0,0,0,0.6)", fontWeight: "normal" }}>Transcription </Typography.Title>
+        </div> */}
+        <BasicExample />
+      </Content>
     </div>
 
+    {/* Right side */}
+    <div>
+      <div className="button-wrapper">
+        <button style={{ backgroundColor: "#39594D" }} onClick={() => this.onCohereCall(cohere_overview)}>
+          Generate lecture overview
+        </button>
+        <button style={{ backgroundColor: "#D18EE2" }} onClick={() => this.onCohereCall(cohere_todolist)}>
+          Create a To-Do List
+        </button>
+        <Link to="/quiz">
+          <button style={{ backgroundColor: "#FF7759" }}>Quiz me!</button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</StudentPageLayout>
 
-       
-        </Content>
-      </StudentPageLayout>
     );
   }
 }

@@ -1,10 +1,10 @@
 .header {
-  color: white !important;
+  color: red !important;
   text-align: center;
   display: flex;
   justify-content: space-around;
   height: auto;
-  background: black !important;
+  background: #EFF2F5 !important;
 }
 .header h1 {
   padding-top: 10px;
