@@ -13,7 +13,7 @@ import Classes from "./index.module.css";
 import Error404 from "./components/Error404/Error404";
 import AssignmentHome from "./components/Student/Assignment/AssignmentHome";
 import QuizMe from "./components/Student/Home/Quiz";
-
+import TodoList from "./components/Student/ToDoList/Todo";
 
 
 class App extends Component {
@@ -54,6 +54,7 @@ class App extends Component {
           <Route path="/attendance" exact component={AttendancePage} />
           <Route path="/assignments" exact component={AssignmentHome} />
           <Route path="/quiz" exact component={QuizMe} />
+          <Route path="/todo" exact component={TodoList} />
           <Route component={Error404} />
         </Switch>
         <Layout.Footer className={Classes.footer}>

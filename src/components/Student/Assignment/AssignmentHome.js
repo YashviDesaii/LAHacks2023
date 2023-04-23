@@ -20,17 +20,22 @@ const data = [
     desc:
       "Proident exercitation nisi labore sint laboris proident deserunt laborum culpa enim veniam est."
   },
+  {
+    title: "TODO 3",
+    desc:
+      "Proident exercitation nisi laboveniam est."
+  },
   
   
 ];
 
 class AssignmentHome extends Component {
   state = {
-    tabData: ["SUBJECT1", "AUDIO2"]
+    tabData: ["SUBJECT1", "SUBJECT2"]
   };
   render() {
     return (
-      <StudentPageLayout menuSelect="1">
+      <StudentPageLayout>
         <div
           style={{
             display: "flex",

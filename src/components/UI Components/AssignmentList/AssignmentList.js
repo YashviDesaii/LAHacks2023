@@ -12,9 +12,14 @@ class AssignmentList extends Component {
       <List
         style={{ padding: "0px 20px" }}
         itemLayout="vertical"
-        dataSource={this.props.data.filter(
-          v => Math.floor(Math.random() * 10) > 5
-        )}
+        dataSource={this.props.data}
+        // dataSource={this.props.data.filter(
+        //   v => Math.floor(Math.random() * 10) > 5
+        // )}
+
+        // dataSource={this.props.data.filter(
+        //   v => Math.floor(Math.random() * 10) > 5
+        // ).slice(0, 3)} // only include the first 3 items
         header={
           <Typography.Title level={2} style={{ fontWeight: "normal" }}>
             {this.props.title}

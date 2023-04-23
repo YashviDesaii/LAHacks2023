@@ -25,7 +25,7 @@ class AssignmentsTab extends Component {
                     border: "rgba(0,0,0,0.1) 1px solid"
                   }}
                 >
-                  <strong>{Math.floor(Math.random() * 5)}</strong>
+                  
                 </Tag>
               </span>
             }
