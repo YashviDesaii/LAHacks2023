@@ -28,9 +28,9 @@ class AssignmentList extends Component {
         renderItem={item => (
           <List.Item>
             <List.Item.Meta
-              avatar={
-                <Avatar src="https://ui-ex.com/images/book-svg-pen-1.png" />
-              }
+              // avatar={
+              //   <Avatar src="https://ui-ex.com/images/book-svg-pen-1.png" />
+              // }
               title={<AssignmetModal title={item.title} />}
               description={
                 <>
@@ -43,14 +43,8 @@ class AssignmentList extends Component {
                       flexWrap: "wrap"
                     }}
                   >
-                    <Button type="link" icon="download">
-                      Download
-                    </Button>
-                    {this.props.isCompleted ? null : (
-                      <Button type="link" icon="upload">
-                        Upload
-                      </Button>
-                    )}
+                    
+                  
                   </div>
                 </>
               }

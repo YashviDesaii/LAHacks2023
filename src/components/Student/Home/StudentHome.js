@@ -32,6 +32,7 @@ const { Content } = Layout;
 
 class SiderDemo extends React.Component {
 
+  
   // constructor(props) {
   //   super(props);
   //   this.state = {
@@ -152,15 +153,17 @@ class SiderDemo extends React.Component {
 
     {/* Right side */}
     <div>
-      <div className="button-wrapper">
-        <button style={{ backgroundColor: "#39594D" }} onClick={() => this.onCohereCall(cohere_overview)}>
+      <div className="button-wrapper" style={{ flex: 2, paddingTop: 100, paddingLeft: 100 }}>
+      <Link to="/overview"><button onClick={() => this.onCohereCall(cohere_overview)}>
           Generate lecture overview
         </button>
-        <button style={{ backgroundColor: "#D18EE2" }} onClick={() => this.onCohereCall(cohere_todolist)}>
+        </Link>
+        <Link to="/todo"><button onClick={() => this.onCohereCall(cohere_todolist)}>
           Create a To-Do List
         </button>
+        </Link>
         <Link to="/quiz">
-          <button style={{ backgroundColor: "#FF7759" }}>Quiz me!</button>
+          <button>Quiz me!</button>
         </Link>
       </div>
     </div>

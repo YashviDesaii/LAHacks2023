@@ -14,7 +14,8 @@ import Error404 from "./components/Error404/Error404";
 import AssignmentHome from "./components/Student/Assignment/AssignmentHome";
 import QuizMe from "./components/Student/Home/Quiz";
 import TodoList from "./components/Student/ToDoList/Todo";
-
+import OverviewHome from "./components/Student/Overview/Overview";
+import Flashquiz from "./components/Student/quiz/Flashquiz.js";
 
 class App extends Component {
   render() {
@@ -53,9 +54,10 @@ class App extends Component {
           />
           <Route path="/attendance" exact component={AttendancePage} />
           <Route path="/assignments" exact component={AssignmentHome} />
-          <Route path="/quiz" exact component={QuizMe} />
+          <Route path="/overview" exact component={OverviewHome} />
+          <Route path="/quiz" exact component={Flashquiz} />
           <Route path="/todo" exact component={TodoList} />
-          <Route component={Error404} />
+          <Route component={StudentHome} />
         </Switch>
         <Layout.Footer className={Classes.footer}>
           <Icon type="copyright" theme="twoTone" />

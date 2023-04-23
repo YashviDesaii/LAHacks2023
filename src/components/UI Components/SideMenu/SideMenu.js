@@ -46,28 +46,37 @@ class SideMenu extends Component {
               <span>Dashboard</span>
             </Link>
           </Menu.Item>
-          <Menu.Item key="2">
+          {/* <Menu.Item key="2">
             <Link to="/attendance">
               <Icon type="calendar" />
               <span>Attendance</span>
             </Link>
-          </Menu.Item>
+          </Menu.Item> */}
           <Menu.Item key="3">
             <Link to="/assignments">
               <Icon type="book" />
-              <span>Assignments</span>
+              <span>To Do</span>
             </Link>
           </Menu.Item>
           <Menu.Item key="4">
-            <Icon type="setting" />
-            <span>Settings</span>
+            <Link to="/overview">
+              <Icon type="calendar" />
+              <span>Overview</span>
+            </Link>
           </Menu.Item>
           <Menu.Item key="5">
+          <Link to="/quiz">
+            <Icon type="question" />
+            <span>Quiz</span>
+            </Link>
+          </Menu.Item>
+     
+          {/* <Menu.Item key="6">
             <Link to="/login">
               <Icon type="logout" />
               <span>Logout</span>
             </Link>
-          </Menu.Item>
+          </Menu.Item> */}
         </Menu>
       </Sider>
     );
